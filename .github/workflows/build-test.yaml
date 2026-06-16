@@ -49,3 +49,4 @@ jobs:
             ${{ runner.os }}-go-
       - name: Run Unit tests
         run: make build/canopy-full && go test $(go list ./... | grep -v cmd/auto-update)
+        # trigger workflow
